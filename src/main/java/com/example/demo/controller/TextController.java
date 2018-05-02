@@ -37,4 +37,20 @@ public class TextController {
         log.info("发布事件");
         return "ok";
     }
+
+
+//    @RequestMapping(value = "textEvent" ,method = RequestMethod.POST)
+//    @ResponseBody
+//    public String textEvent(){
+//        MyApplicationEvent myApplicationEvent =new MyApplicationEvent(applicationContext);
+//        myApplicationEvent.setType("1");
+//        myApplicationEvent.setObject(null);
+//        Map<String,Object> map =new HashMap<>();
+//        map.put("name","ningcs");
+//        myApplicationEvent.setMaps(map);
+//        //发布事件
+//        applicationContext.publishEvent(myApplicationEvent);
+//        log.info("发布事件");
+//        return "ok";
+//    }
 }
